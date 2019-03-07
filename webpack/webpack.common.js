@@ -11,7 +11,7 @@ const dest = Path.join(__dirname, '../dist');
 module.exports = {
     entry: {
         app: Path.resolve(__dirname, '../src/scripts/index'),
-        vendors: ['@babel/polyfill', Path.resolve(__dirname, '../src/scripts/vendors/index')],
+        vendors: Path.resolve(__dirname, '../src/scripts/vendors/index'),
     },
     output: {
         path: dest,
