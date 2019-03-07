@@ -1,13 +1,11 @@
 .modal-content {
-  color: #fff;
-  background-color: @color-primary;
   border: none;
 
-  a {
-    color: rgba(255,255,255, 0.75);
+  .nav-link {
 
-    &:hover {
+    &:focus, &:hover {
       color: #fff;
+      background-color: @color-light;
     }
   }
 
@@ -18,4 +16,5 @@
 
 .modal-header {
   color: #fff;
+  background-color: @color-primary;
 }
