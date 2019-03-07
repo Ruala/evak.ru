@@ -1,5 +1,27 @@
 .header {
 
+  &__nav {
+
+    .nav-link {
+      padding: 0 1rem;
+      color: @color-secondary;
+
+      &:hover {
+        color: lighten(@color-secondary, 10%);
+      }
+    }
+  }
+
+  .navbar-toggler {
+    padding: 0.5rem 0.75rem;
+    color: @color-secondary;
+    border: 2px solid @color-secondary;
+
+    &:hover {
+      color: lighten(@color-secondary, 10%);
+      border-color: lighten(@color-secondary, 10%);
+    }
+  }
 }
 
 @media (max-width: 767px) {

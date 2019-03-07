@@ -1,0 +1,68 @@
+.bg-primary {
+  background-color: @color-primary !important;
+}
+
+.bg-secondary {
+  background-color: @color-secondary !important;
+}
+
+.bg-light {
+  background-color: @color-light !important;
+}
+
+.bg-dark {
+  background-color: @color-dark !important;
+}
+
+.btn-primary {
+  background-color: @color-primary;
+  border-color: @color-primary;
+
+  &:hover {
+    background-color: lighten(@color-primary, 10%);
+    border-color: lighten(@color-primary, 10%);
+  }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+  background-color: lighten(@color-primary, 10%);
+  border-color: lighten(@color-primary, 10%);
+}
+
+.btn-primary.focus,
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(@color-primary,.5);
+}
+
+.btn-secondary {
+  color: @text-color;
+  background-color: @color-secondary;
+  border-color: @color-secondary;
+
+  &:hover {
+    color: @text-color;
+    background-color: lighten(@color-secondary, 10%);
+    border-color: lighten(@color-secondary, 10%);
+  }
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+  color: @text-color;
+  background-color: lighten(@color-secondary, 10%);
+  border-color: lighten(@color-secondary, 10%);
+}
+
+.btn-secondary.focus,
+.btn-secondary:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(@color-secondary,.5);
+}
