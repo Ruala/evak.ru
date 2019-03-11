@@ -12,6 +12,14 @@
     }
   }
 
+  &__link {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   .navbar-toggler {
     padding: 0.5rem 0.75rem;
     color: @color-secondary;
@@ -22,6 +30,11 @@
       border-color: lighten(@color-secondary, 10%);
     }
   }
+}
+
+.slogan {
+  font-size: 18px;
+  line-height: 20px;
 }
 
 @media (max-width: 767px) {

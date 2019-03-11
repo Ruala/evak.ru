@@ -22,12 +22,30 @@
         <!--Header-->
         <header class="header navbar navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo1.png" width="169" height="49" alt="">
-                    <img class="d-none d-md-inline-block" src="images/logo2.png" width="160" height="49" alt="">
-                </a>
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo1.png" width="169" height="49" alt="">
+                    </a>
 
-                <ul class="nav mr-3 d-none d-lg-flex">
+                    <div class="d-none d-md-block mr-2">
+                        <div class="slogan text-secondary">Все эвакуаторы Москвы и РФ</div>
+                        <div>
+                            <a class="header__link small text-white" href="#exampleModalCenter" data-toggle="modal">Регион: Москва и область</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_controls"
+                        aria-controls="nav_controls" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="header__nav nav mr-2 d-none d-lg-flex">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" rel="follow">Программа для <br>
+                            водителей эвакуаторов</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://evak.ru/evak-clients/" rel="nofollow">
                             <img src="images/gooPlay.png" width="126" height="47" alt="">
@@ -40,27 +58,6 @@
                     </li>
                 </ul>
 
-                <ul class="header__nav d-none d-sm-flex  nav flex-column mr-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/stat-uchastnikom/" rel="follow">Добавить</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/evak-driver/" rel="follow">EVAK.RU-Drivers</a>
-                    </li>
-                </ul>
-
-                <nav class="nav mr-3 d-none d-sm-flex">
-                    <button class="btn btn-secondary" type="button" data-toggle="modal"
-                            data-target="#exampleModalCenter">
-                        Москва и область
-                    </button>
-                </nav>
-
-                <!-- Collapse button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_controls"
-                        aria-controls="nav_controls" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
 
                 <!-- Collapsible content -->
                 <div class="collapse navbar-collapse" id="nav_controls">
