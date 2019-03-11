@@ -1,23 +1,55 @@
 .cards-list {
 
   .card {
-    color: #fff;
-    background-color: @color-primary;
-    border: none;
+    border-color: fade(@color-primary-light, 30%);
   }
 
   .card-header {
-    border-bottom: 1px solid #fff;
+    padding: 0.5rem 1.25rem;
+    background-color: fade(@color-primary-light, 30%);
+    border-color: fade(@color-primary-light, 30%);
+  }
+
+  .card-title {
+    font-weight: bold;
+  }
+
+  .card-phone {
+    font-size: 20px;
+    font-weight: bold;
+    color: @text-color;
+
+    span {
+      color: @color-primary;
+    }
+
+    &:hover {
+      color: fade(@text-color, 80%);
+      text-decoration: none;
+    }
+  }
+
+  .card-time {
+    color: fade(@color-primary-light, 40%);
   }
 
   .card-body {
+    position: relative;
+  }
 
-    a {
-      color: rgba(255,255,255, 0.75);
+  .btn-more {
+    padding: 0;
+    line-height: 34px;
+    font-size: 30px;
+    color: fade(@color-primary-light, 40%);
+    border: none;
 
-      &:hover {
-        color: #fff;
-      }
+    &:hover {
+      color: @color-primary-light;
+    }
+
+    &:focus {
+      box-shadow: none;
     }
   }
 }
