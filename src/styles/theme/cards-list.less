@@ -10,6 +10,20 @@
     border-color: fade(@color-primary-light, 30%);
   }
 
+  .btn-plus {
+    color: @color-primary-light;
+    border-color: @color-primary-light;
+
+    &:hover {
+      color: darken(@color-primary-light, 10%);
+      border-color: darken(@color-primary-light, 10%);
+    }
+
+    &:focus {
+      border-color: rgba(0,123,255,.25);
+    }
+  }
+
   .card-title {
     font-weight: bold;
   }
@@ -33,10 +47,6 @@
     color: fade(@color-primary-light, 40%);
   }
 
-  .card-body {
-    position: relative;
-  }
-
   .btn-more {
     padding: 0;
     line-height: 34px;
@@ -50,6 +60,18 @@
 
     &:focus {
       box-shadow: none;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+
+  .cards-list {
+
+    .btn-more {
+      position: absolute;
+      right: 15px;
+      bottom: 0;
     }
   }
 }

@@ -27,7 +27,7 @@
                         <img src="images/logo1.png" width="169" height="49" alt="">
                     </a>
 
-                    <div class="d-none d-md-block mr-2">
+                    <div class="d-none d-sm-block mr-2">
                         <div class="slogan text-secondary">Все эвакуаторы Москвы и РФ</div>
                         <div>
                             <a class="header__link small text-white" href="#exampleModalCenter" data-toggle="modal">Регион: Москва и область</a>
@@ -41,26 +41,31 @@
                     <i class="fas fa-bars"></i>
                 </button>
 
-                <ul class="header__nav nav mr-2 d-none d-lg-flex">
+                <ul class="header__nav nav d-none d-lg-flex">
                     <li class="nav-item">
                         <a class="nav-link" href="#" rel="follow">Программа для <br>
                             водителей эвакуаторов</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="http://evak.ru/evak-clients/" rel="nofollow">
-                            <img src="images/gooPlay.png" width="126" height="47" alt="">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="http://evak.ru/evak-clients/" rel="nofollow">
-                            <img src="images/appStore.png" width="126" height="47" alt="">
-                        </a>
-                    </li>
                 </ul>
+
+                <a class="d-none d-xl-inline-block" href="http://evak.ru/evak-clients/" rel="nofollow">
+                    <img src="images/gooPlay.png" width="126" height="47" alt="">
+                </a>
+
+                <a class="d-none d-xl-inline-block" href="http://evak.ru/evak-clients/" rel="nofollow">
+                    <img src="images/appStore.png" width="126" height="47" alt="">
+                </a>
 
 
                 <!-- Collapsible content -->
                 <div class="collapse navbar-collapse" id="nav_controls">
+                    <div class="d-sm-none mb-2">
+                        <div class="slogan text-secondary">Все эвакуаторы Москвы и РФ</div>
+                        <div>
+                            <a class="header__link small text-white" href="#exampleModalCenter" data-toggle="modal">Регион: Москва и область</a>
+                        </div>
+                    </div>
+
                     <!-- Links -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -86,6 +91,23 @@
                         </li>
                     </ul>
                     <!-- Links -->
+
+                    <ul class="navbar-nav d-lg-none">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" rel="follow">Программа для <br>
+                                водителей эвакуаторов</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="d-xl-none py-3">
+                        <a class="d-inline-block" href="http://evak.ru/evak-clients/" rel="nofollow">
+                            <img src="images/gooPlay.png" width="126" height="47" alt="">
+                        </a>
+
+                        <a class="d-inline-block" href="http://evak.ru/evak-clients/" rel="nofollow">
+                            <img src="images/appStore.png" width="126" height="47" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -107,45 +129,54 @@
 
                         <!-- Search -->
                         <div class="bg-white rounded shadow p-3 mb-4">
-                            <div class="mb-2">
-                                <div class="custom-control-inline">
-                                    <h5>Показать эвакуаторы:</h5>
-                                </div>
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input class="custom-control-input" type="radio" name="lockedWheels" id="searchRadio1" value="option1">
-                                    <label class="custom-control-label" for="searchRadio1">все</label>
-                                </div>
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input class="custom-control-input" type="radio" name="lockedWheels" id="searchRadio2" value="option2">
-                                    <label class="custom-control-label" for="searchRadio2">круглосуточные</label>
-                                </div>
+                            <div class="d-lg-none">
+                                <a class="switch-btn collapsed" href="#searchNav" data-toggle="collapse"
+                                   role="button" aria-expanded="false" aria-controls="searchNav">
+                                    Поиск эвакуатора по параметрам
+                                </a>
                             </div>
 
-                            <div class="d-flex">
-                                <div class="flex-fill pr-2">
-                                    <button class="btn btn-secondary w-100 mb-2" type="button" data-toggle="modal"
-                                            data-target="#exampleModalCenter">
-                                        Округ <i class="fas fa-angle-down ml-2"></i>
-                                    </button>
+                            <div id="searchNav" class="search-nav collapse">
+                                <div class="py-2">
+                                    <div class="d-sm-inline-flex mr-sm-3">
+                                        <h5>Показать эвакуаторы:</h5>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input class="custom-control-input" type="radio" name="lockedWheels" id="searchRadio1" value="option1">
+                                        <label class="custom-control-label" for="searchRadio1">все</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input class="custom-control-input" type="radio" name="lockedWheels" id="searchRadio2" value="option2">
+                                        <label class="custom-control-label" for="searchRadio2">круглосуточные</label>
+                                    </div>
                                 </div>
-                                <div class="flex-fill pr-2">
-                                    <button class="btn btn-secondary w-100 mb-2" type="button" data-toggle="modal"
-                                            data-target="#exampleModalCenter">
-                                        Метро <i class="fas fa-angle-down ml-2"></i>
-                                    </button>
-                                </div>
-                                <div class="flex-fill pr-2">
-                                    <button class="btn btn-secondary w-100 mb-2" type="button" data-toggle="modal"
-                                            data-target="#exampleModalCenter">
-                                        Подммосковье <i class="fas fa-angle-down ml-2"></i>
-                                    </button>
-                                </div>
-                                <div class="flex-fill">
-                                    <button class="btn btn-secondary w-100 mb-2" type="button" data-toggle="modal"
-                                            data-target="#exampleModalCenter">
-                                        Тип <i class="fas fa-angle-down ml-2"></i>
-                                    </button>
-                                </div>
+
+                                <ul class="search-list">
+                                    <li class="search-list__item">
+                                        <button class="btn btn-secondary mb-2" type="button" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
+                                            Округ <i class="fas fa-angle-down ml-2"></i>
+                                        </button>
+                                    </li>
+                                    <li class="search-list__item">
+                                        <button class="btn btn-secondary mb-2" type="button" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
+                                            Метро <i class="fas fa-angle-down ml-2"></i>
+                                        </button>
+                                    </li>
+                                    <li class="search-list__item">
+                                        <button class="btn btn-secondary mb-2" type="button" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
+                                            Подммосковье <i class="fas fa-angle-down ml-2"></i>
+                                        </button>
+                                    </li>
+                                    <li class="search-list__item">
+                                        <button class="btn btn-secondary mb-2" type="button" data-toggle="modal"
+                                                data-target="#exampleModalCenter">
+                                            Тип <i class="fas fa-angle-down ml-2"></i>
+                                        </button>
+                                    </li>
+                                </ul>
                             </div>
                             
                         </div>
@@ -159,10 +190,10 @@
                                             <h3 class="card-title mb-0"><i class="fas fa-map-marker-alt mr-2"></i> <span>м. Киевская</span></h3>
                                         </div>
                                         <div class="col-auto">
-                                            <a class="btn btn-secondary" href="#comment" data-toggle="modal">
+                                            <a class="btn btn-plus" href="#comment" data-toggle="modal">
                                                 <i class="fas fa-plus"></i>
                                             </a>
-                                            <!--<a class="btn btn-secondary" href="tel:+79851881471">
+                                            <!--<a class="btn btn-primary" href="tel:+79851881471">
                                                 <i class="fas fa-phone"></i>
                                             </a>-->
                                         </div>
@@ -181,7 +212,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-auto d-flex align-items-end flex-column text-right">
+                                        <div class="col-sm-auto d-flex align-items-sm-end flex-column">
                                             <div>
                                                 <i class="card-time fas fa-clock mr-1"></i> с 9 до 20
                                             </div>
@@ -203,10 +234,10 @@
                                             <h3 class="card-title mb-0"><i class="fas fa-map-marker-alt mr-2"></i> <span>м. Киевская</span></h3>
                                         </div>
                                         <div class="col-auto">
-                                            <a class="btn btn-secondary" href="#comment" data-toggle="modal">
+                                            <a class="btn btn-plus" href="#comment" data-toggle="modal">
                                                 <i class="fas fa-plus"></i>
                                             </a>
-                                            <!--<a class="btn btn-secondary" href="tel:+79851881471">
+                                            <!--<a class="btn btn-primary" href="tel:+79851881471">
                                                 <i class="fas fa-phone"></i>
                                             </a>-->
                                         </div>
@@ -225,7 +256,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-auto d-flex align-items-end flex-column text-right">
+                                        <div class="col-sm-auto d-flex align-items-sm-end flex-column">
                                             <div>
                                                 <i class="card-time fas fa-clock mr-1"></i> с 9 до 20
                                             </div>
@@ -246,10 +277,10 @@
                                             <h3 class="card-title mb-0"><i class="fas fa-map-marker-alt mr-2"></i> <span>м. Киевская</span></h3>
                                         </div>
                                         <div class="col-auto">
-                                            <a class="btn btn-secondary" href="#comment" data-toggle="modal">
+                                            <a class="btn btn-plus" href="#comment" data-toggle="modal">
                                                 <i class="fas fa-plus"></i>
                                             </a>
-                                            <!--<a class="btn btn-secondary" href="tel:+79851881471">
+                                            <!--<a class="btn btn-primary" href="tel:+79851881471">
                                                 <i class="fas fa-phone"></i>
                                             </a>-->
                                         </div>
@@ -268,7 +299,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-auto d-flex align-items-end flex-column text-right">
+                                        <div class="col-sm-auto d-flex align-items-sm-end flex-column">
                                             <div>
                                                 <i class="card-time fas fa-clock mr-1"></i> с 9 до 20
                                             </div>
@@ -289,10 +320,10 @@
                                             <h3 class="card-title mb-0"><i class="fas fa-map-marker-alt mr-2"></i> <span>м. Киевская</span></h3>
                                         </div>
                                         <div class="col-auto">
-                                            <a class="btn btn-secondary" href="#comment" data-toggle="modal">
+                                            <a class="btn btn-plus" href="#comment" data-toggle="modal">
                                                 <i class="fas fa-plus"></i>
                                             </a>
-                                            <!--<a class="btn btn-secondary" href="tel:+79851881471">
+                                            <!--<a class="btn btn-primary" href="tel:+79851881471">
                                                 <i class="fas fa-phone"></i>
                                             </a>-->
                                         </div>
@@ -311,7 +342,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-auto d-flex align-items-end flex-column text-right">
+                                        <div class="col-sm-auto d-flex align-items-sm-end flex-column">
                                             <div>
                                                 <i class="card-time fas fa-clock mr-1"></i> с 9 до 20
                                             </div>
@@ -332,10 +363,10 @@
                                             <h3 class="card-title mb-0"><i class="fas fa-map-marker-alt mr-2"></i> <span>м. Киевская</span></h3>
                                         </div>
                                         <div class="col-auto">
-                                            <a class="btn btn-secondary" href="#comment" data-toggle="modal">
+                                            <a class="btn btn-plus" href="#comment" data-toggle="modal">
                                                 <i class="fas fa-plus"></i>
                                             </a>
-                                            <!--<a class="btn btn-secondary" href="tel:+79851881471">
+                                            <!--<a class="btn btn-primary" href="tel:+79851881471">
                                                 <i class="fas fa-phone"></i>
                                             </a>-->
                                         </div>
@@ -354,7 +385,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-auto d-flex align-items-end flex-column text-right">
+                                        <div class="col-sm-auto d-flex align-items-sm-end flex-column">
                                             <div>
                                                 <i class="card-time fas fa-clock mr-1"></i> с 9 до 20
                                             </div>
@@ -375,10 +406,10 @@
                                             <h3 class="card-title mb-0"><i class="fas fa-map-marker-alt mr-2"></i> <span>м. Киевская</span></h3>
                                         </div>
                                         <div class="col-auto">
-                                            <a class="btn btn-secondary" href="#comment" data-toggle="modal">
+                                            <a class="btn btn-plus" href="#comment" data-toggle="modal">
                                                 <i class="fas fa-plus"></i>
                                             </a>
-                                            <!--<a class="btn btn-secondary" href="tel:+79851881471">
+                                            <!--<a class="btn btn-primary" href="tel:+79851881471">
                                                 <i class="fas fa-phone"></i>
                                             </a>-->
                                         </div>
@@ -397,7 +428,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-auto d-flex align-items-end flex-column text-right">
+                                        <div class="col-sm-auto d-flex align-items-sm-end flex-column">
                                             <div>
                                                 <i class="card-time fas fa-clock mr-1"></i> с 9 до 20
                                             </div>
@@ -418,10 +449,10 @@
                                             <h3 class="card-title mb-0"><i class="fas fa-map-marker-alt mr-2"></i> <span>м. Киевская</span></h3>
                                         </div>
                                         <div class="col-auto">
-                                            <a class="btn btn-secondary" href="#comment" data-toggle="modal">
+                                            <a class="btn btn-plus" href="#comment" data-toggle="modal">
                                                 <i class="fas fa-plus"></i>
                                             </a>
-                                            <!--<a class="btn btn-secondary" href="tel:+79851881471">
+                                            <!--<a class="btn btn-primary" href="tel:+79851881471">
                                                 <i class="fas fa-phone"></i>
                                             </a>-->
                                         </div>
@@ -440,7 +471,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-auto d-flex align-items-end flex-column text-right">
+                                        <div class="col-sm-auto d-flex align-items-sm-end flex-column">
                                             <div>
                                                 <i class="card-time fas fa-clock mr-1"></i> с 9 до 20
                                             </div>
@@ -461,10 +492,10 @@
                                             <h3 class="card-title mb-0"><i class="fas fa-map-marker-alt mr-2"></i> <span>м. Киевская</span></h3>
                                         </div>
                                         <div class="col-auto">
-                                            <a class="btn btn-secondary" href="#comment" data-toggle="modal">
+                                            <a class="btn btn-plus" href="#comment" data-toggle="modal">
                                                 <i class="fas fa-plus"></i>
                                             </a>
-                                            <!--<a class="btn btn-secondary" href="tel:+79851881471">
+                                            <!--<a class="btn btn-primary" href="tel:+79851881471">
                                                 <i class="fas fa-phone"></i>
                                             </a>-->
                                         </div>
@@ -483,7 +514,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-auto d-flex align-items-end flex-column text-right">
+                                        <div class="col-sm-auto d-flex align-items-sm-end flex-column">
                                             <div>
                                                 <i class="card-time fas fa-clock mr-1"></i> с 9 до 20
                                             </div>
@@ -504,10 +535,10 @@
                                             <h3 class="card-title mb-0"><i class="fas fa-map-marker-alt mr-2"></i> <span>м. Киевская</span></h3>
                                         </div>
                                         <div class="col-auto">
-                                            <a class="btn btn-secondary" href="#comment" data-toggle="modal">
+                                            <a class="btn btn-plus" href="#comment" data-toggle="modal">
                                                 <i class="fas fa-plus"></i>
                                             </a>
-                                            <!--<a class="btn btn-secondary" href="tel:+79851881471">
+                                            <!--<a class="btn btn-primary" href="tel:+79851881471">
                                                 <i class="fas fa-phone"></i>
                                             </a>-->
                                         </div>
@@ -526,7 +557,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-auto d-flex align-items-end flex-column text-right">
+                                        <div class="col-sm-auto d-flex align-items-sm-end flex-column">
                                             <div>
                                                 <i class="card-time fas fa-clock mr-1"></i> с 9 до 20
                                             </div>
@@ -547,10 +578,10 @@
                                             <h3 class="card-title mb-0"><i class="fas fa-map-marker-alt mr-2"></i> <span>м. Киевская</span></h3>
                                         </div>
                                         <div class="col-auto">
-                                            <a class="btn btn-secondary" href="#comment" data-toggle="modal">
+                                            <a class="btn btn-plus" href="#comment" data-toggle="modal">
                                                 <i class="fas fa-plus"></i>
                                             </a>
-                                            <!--<a class="btn btn-secondary" href="tel:+79851881471">
+                                            <!--<a class="btn btn-primary" href="tel:+79851881471">
                                                 <i class="fas fa-phone"></i>
                                             </a>-->
                                         </div>
@@ -569,7 +600,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-auto d-flex align-items-end flex-column text-right">
+                                        <div class="col-sm-auto d-flex align-items-sm-end flex-column">
                                             <div>
                                                 <i class="card-time fas fa-clock mr-1"></i> с 9 до 20
                                             </div>
@@ -583,6 +614,7 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
 
                     </div>
@@ -617,7 +649,7 @@
                                     </a>
                                 </li>
 
-                                <li class="nav-item d-flex align-items-center ml-auto">
+                                <li class="nav-item d-none d-sm-flex align-items-center ml-auto">
                                     <a class="" href="#exampleModalCenter" data-toggle="modal">
                                         Цены на эвакуацию
                                     </a>
@@ -637,7 +669,7 @@
                                     </div>
 
                                     <div class="row align-items-end">
-                                        <div class="col-sm-expand mb-3">
+                                        <div class="col-expand mb-3">
                                             <div class="mb-2">
                                                 <div>Сколько колес заблокировано?</div>
                                                 <div class="custom-control custom-radio custom-control-inline">
@@ -689,7 +721,7 @@
                                             <div class="small text-muted">* Окончательную стоимость перевозки уточняйте у диспетчеров</div>
                                         </div>
 
-                                        <div class="col-auto mb-3">
+                                        <div class="col-sm-auto mb-3">
                                             <div class="form-group">
                                                 <label for="username21">Ваше имя</label>
                                                 <input type="text" class="form-control" id="username21" placeholder="Ваше имя">
@@ -719,7 +751,7 @@
                                     </div>
 
                                     <div class="row align-items-end">
-                                        <div class="col-sm-expand mb-3">
+                                        <div class="col-expand mb-3">
                                             <div class="mb-2">
                                                 <div>Сколько колес заблокировано?</div>
                                                 <div class="custom-control custom-radio custom-control-inline">
@@ -771,7 +803,7 @@
                                             <div class="small text-muted">* Окончательную стоимость перевозки уточняйте у диспетчеров</div>
                                         </div>
 
-                                        <div class="col-auto mb-3">
+                                        <div class="col-sm-auto mb-3">
                                             <div class="form-group">
                                                 <label for="username22">Ваше имя</label>
                                                 <input type="text" class="form-control" id="username22" placeholder="Ваше имя">
@@ -801,7 +833,7 @@
                                     </div>
 
                                     <div class="row align-items-end">
-                                        <div class="col-sm-expand mb-3">
+                                        <div class="col-expand mb-3">
                                             <div class="mb-2">
                                                 <div>Сколько колес заблокировано?</div>
                                                 <div class="custom-control custom-radio custom-control-inline">
@@ -853,7 +885,7 @@
                                             <div class="small text-muted">* Окончательную стоимость перевозки уточняйте у диспетчеров</div>
                                         </div>
 
-                                        <div class="col-auto mb-3">
+                                        <div class="col-sm-auto mb-3">
                                             <div class="form-group">
                                                 <label for="username23">Ваше имя</label>
                                                 <input type="text" class="form-control" id="username23" placeholder="Ваше имя">
@@ -883,7 +915,7 @@
                                     </div>
 
                                     <div class="row align-items-end">
-                                        <div class="col-sm-expand mb-3">
+                                        <div class="col-expand mb-3">
                                             <div class="mb-2">
                                                 <div>Сколько колес заблокировано?</div>
                                                 <div class="custom-control custom-radio custom-control-inline">
@@ -927,7 +959,7 @@
                                             <div class="small text-muted">* Окончательную стоимость перевозки уточняйте у диспетчеров</div>
                                         </div>
 
-                                        <div class="col-auto mb-3">
+                                        <div class="col-sm-auto mb-3">
                                             <div class="form-group">
                                                 <label for="username">Ваше имя</label>
                                                 <input type="text" class="form-control" id="username" placeholder="Ваше имя">
@@ -947,7 +979,7 @@
 
                             </div>
 
-                            <div class="small text-right">
+                            <div class="small text-sm-right">
                                 Отправляя форму, Вы соглашаетесь с <a href="#">политикой конфеденциальности</a>
                             </div>
 

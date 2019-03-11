@@ -126,6 +126,24 @@ h6, .h6 {
   text-transform: uppercase;
 }
 
+.switch-btn {
+  position: relative;
+  padding-right: 30px;
+
+  &::before {
+    content: "\f106";
+    position: absolute;
+    top: -2px;
+    right: 0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  &.collapsed::before {
+    content: "\f107";
+  }
+}
+
 // Table responsive
 
 @media (max-width: 575px) {
