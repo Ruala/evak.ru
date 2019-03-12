@@ -19,7 +19,12 @@
     }
 
     &:focus, &:hover {
-      background-color: @color-secondary-light;
+      color: #fff;
+      background-color: @color-primary-light;
+
+      .custom-control-icon {
+        border-color: #fff;
+      }
     }
   }
 
@@ -32,10 +37,16 @@
     margin-right: 10px;
     color: #fff;
     border-radius: 50%;
+    border: 2px solid transparent;
   }
 
   .custom-radio .custom-control-input:checked~.custom-control-label {
-    background-color: @color-secondary-light;
+    color: #fff;
+    background-color: @color-primary-light;
+
+    .custom-control-icon {
+      border-color: #fff;
+    }
   }
 }
 
